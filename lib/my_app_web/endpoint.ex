@@ -40,5 +40,6 @@ defmodule MyAppWeb.Endpoint do
     key: "_my_app_key",
     signing_salt: "6ooKrAiR"
 
+  plug CORSPlug, origin: ["*"]
   plug MyAppWeb.Router
 end
